@@ -1,0 +1,11 @@
+version: "3"
+services:
+  emulator:
+    build: ./emulator
+    container_name: x86_emulator
+    volumes:
+      - "../src:/home/src"
+      - "../data:/home/data"
+      - "../99_references/tolset_p86:/home/sample_code"
+    working_dir: /home
+    tty: true
