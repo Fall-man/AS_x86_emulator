@@ -14,4 +14,5 @@ RUN apt-get update && apt-get install -y \
     vim \
     man \
     manpages-dev \
-    strace
+    strace \
+    git 
